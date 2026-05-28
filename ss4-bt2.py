@@ -2,8 +2,8 @@ total_revenue = 0
 for i in range(7):
     revenue = int(input(f"Nhập doanh thu ngày {i+1}: "))
     total_revenue = total_revenue + revenue
-    if total_revenue <= 5000000:
-        day = i
+    if revenue >= 5000000:
+        day += 1
 avg_revenue = total_revenue / 7 
 
 print("--- Báo cáo doanh thu tuần Rikkei Store ---")
